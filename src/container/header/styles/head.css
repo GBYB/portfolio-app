@@ -1,0 +1,133 @@
+@media screen and (min-width: 769px) {
+  .head {
+    color: #7f181b;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+  .head .desktop {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .head .desktop .empty {
+    width: 10%;
+    height: auto;
+    background-color: transparent;
+  }
+  .head .desktop .list {
+    background-color: white;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .head .desktop .list h2 {
+    font-size: 2rem;
+    border-bottom: transparent 0.125rem solid;
+    transition: border-bottom 1s;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+  }
+  .head .desktop .list h2:hover {
+    border-color: #7f181b;
+    cursor: pointer;
+  }
+  .head .mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .head {
+    background-color: white;
+    z-index: 1;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    color: #7f181b;
+  }
+  .head .mobile .bar {
+    height: auto;
+    margin: 5% 0;
+    width: 10%;
+    margin-left: 5%;
+    margin-top: 5%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: #7f181b;
+  }
+  .head .mobile .bar img {
+    height: auto;
+    width: 100%;
+    filter: invert(1);
+  }
+  .head .mobile__head {
+    background-color: #7f181b;
+    width: 100vw;
+    font-size: 1.35rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+  }
+  .head .mobile__body {
+    width: auto;
+    font-size: 1.35rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .head .desktop {
+    display: none;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes shake-head {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(2deg);
+  }
+  66% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes shake-head {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(2deg);
+  }
+  66% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}/*# sourceMappingURL=head.css.map */

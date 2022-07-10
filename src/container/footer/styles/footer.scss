@@ -1,0 +1,115 @@
+@mixin center {
+  display: flex;
+  justify-content: space-around;
+}
+.footer {
+  background-color: #7f181b;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: 100vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  //  overflow: hidden;
+
+  div {
+    height: 10%;
+    width: auto;
+    display: flex;
+
+    @include center;
+
+    a {
+      @include center;
+    }
+
+    .links {
+      height: auto;
+      // max-width: 25%;
+      max-width: 50%;
+
+      filter: invert(1);
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    #git {
+      &:hover {
+        animation: shake 1s;
+      }
+    }
+    #in {
+      &:hover {
+        animation: shake 1s;
+      }
+    }
+    #mail {
+      &:hover {
+        animation: shake 1s;
+        //content: url(../../../assets/open-mail.svg);
+      }
+    }
+  }
+}
+@media screen and (max-width: "768px") {
+  .footer {
+    background-color: #7f181b;
+    position: none;
+    z-index: 0;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    div {
+      height: 10%;
+
+      @include center;
+
+      a {
+        @include center;
+      }
+
+      .links {
+        height: auto;
+        max-width: 40%;
+        filter: invert(1);
+        &:hover {
+          cursor: pointer;
+          animation: shake 1s;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: "425px") {
+  .footer {
+    div {
+      .links {
+        height: auto;
+        max-width: 60%;
+      }
+    }
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(15deg);
+  }
+
+  66% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

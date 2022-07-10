@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;700;800&display=swap");
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  .main {
+    width: 100%;
+    // background-color: #d9d9d9;
+    background-color: white;
+  }
+  // .foot {
+  //   width: 100%;
+  // }
+}
+@media screen and (max-width: "768px") {
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    .main {
+      width: 100%;
+      //background-color: #d9d9d9;
+    }
+    // .foot {
+    //   width: 100%;
+    // }
+  }
+}

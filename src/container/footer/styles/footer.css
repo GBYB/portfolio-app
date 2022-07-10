@@ -1,0 +1,110 @@
+.footer {
+  background-color: #7f181b;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: 100vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.footer div {
+  height: 10%;
+  width: auto;
+  display: flex;
+  display: flex;
+  justify-content: space-around;
+}
+.footer div a {
+  display: flex;
+  justify-content: space-around;
+}
+.footer div .links {
+  height: auto;
+  max-width: 50%;
+  filter: invert(1);
+}
+.footer div .links:hover {
+  cursor: pointer;
+}
+.footer div #git:hover {
+  -webkit-animation: shake 1s;
+          animation: shake 1s;
+}
+.footer div #in:hover {
+  -webkit-animation: shake 1s;
+          animation: shake 1s;
+}
+.footer div #mail:hover {
+  -webkit-animation: shake 1s;
+          animation: shake 1s;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    background-color: #7f181b;
+    position: none;
+    z-index: 0;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .footer div {
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer div a {
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer div .links {
+    height: auto;
+    max-width: 40%;
+    filter: invert(1);
+  }
+  .footer div .links:hover {
+    cursor: pointer;
+    -webkit-animation: shake 1s;
+            animation: shake 1s;
+  }
+}
+@media screen and (max-width: 425px) {
+  .footer div .links {
+    height: auto;
+    max-width: 60%;
+  }
+}
+@-webkit-keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(15deg);
+  }
+  66% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(15deg);
+  }
+  66% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}/*# sourceMappingURL=footer.css.map */

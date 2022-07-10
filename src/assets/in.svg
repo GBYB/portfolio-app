@@ -1,0 +1,9 @@
+<svg width="309" height="309" viewBox="0 0 309 309" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_118_42" fill="white">
+<rect width="309" height="309" rx="12"/>
+</mask>
+<rect width="309" height="309" rx="12" stroke="black" stroke-width="30" mask="url(#path-1-inside-1_118_42)"/>
+<path d="M91 130V230" stroke="black" stroke-width="15" stroke-linecap="round"/>
+<path d="M142 131V180M142 229V180M142 180C142 134.162 244.836 80.4186 233.061 229" stroke="black" stroke-width="15" stroke-linecap="round"/>
+<ellipse cx="91.5" cy="79" rx="15.5" ry="16" fill="black"/>
+</svg>
