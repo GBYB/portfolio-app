@@ -10,7 +10,8 @@ const Home = () => {
     "CSS",
     "HTML",
     "Java",
-    "Javascript/TypeScript",
+    "Javascript",
+    "TypeScript",
     "Python",
   ];
   let bioArr = [

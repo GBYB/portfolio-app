@@ -364,7 +364,7 @@
         margin-top: 20%;
 
         #title {
-          font-size: 2rem;
+          font-size: 1.5rem;
         }
         &__line {
           display: none;
@@ -372,13 +372,17 @@
       }
       &__body {
         &__left {
-          width: 60%;
+          width: 100%;
           &__about {
             h1 {
+              text-align: center;
+
               margin: 5%;
               font-size: 1.5rem;
             }
             h2 {
+              text-align: center;
+
               margin: 5%;
               line-height: 1.5rem;
 
@@ -392,6 +396,7 @@
           }
         }
         &__right {
+          display: none;
           width: 40%;
           #red_dude {
             width: 80%;

@@ -29,7 +29,6 @@
   width: 15vw;
 }
 .home__content .body {
-  border: 5px solid red;
   margin-top: 5%;
   margin-left: 5%;
   margin-right: 5%;
@@ -37,11 +36,21 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  background-image: linear-gradient(#7f181b, #7f181b), linear-gradient(#7f181b, #7f181b), linear-gradient(#7f181b, #7f181b), linear-gradient(#7f181b, #7f181b);
+  background-repeat: no-repeat;
+  background-size: 5px 70%, 40% 5px, 5px 70%, 40% 5px;
+  background-position: left bottom, left bottom, right top, right top, 5px 5px;
 }
 .home__content .body .bio {
+  padding: 2%;
   color: #7f181b;
   font-family: "Inter", sans-serif;
   font-weight: 200;
+  background-image: linear-gradient(#7f181b, #7f181b), linear-gradient(#7f181b, #7f181b), linear-gradient(#7f181b, #7f181b), linear-gradient(#7f181b, #7f181b);
+  background-repeat: no-repeat;
+  background-size: 5px 50%, 50% 5px, 5px 50%, 50% 5px;
+  background-position: left bottom, left bottom;
+  margin: 20px;
 }
 @media screen and (max-width: 1024px) and (min-width: 768px) {
   .home__content .body .bio {
@@ -64,8 +73,14 @@
   }
   .home__content .body .bio h1 {
     font-size: 1.5rem;
+    text-align: center;
+  }
+  .home__content .body .bio ul {
+    padding: 0;
+    list-style: none;
   }
   .home__content .body .bio li {
+    text-align: center;
     font-size: 1.3rem;
   }
 }
@@ -74,13 +89,19 @@
     border-radius: 0px;
     width: 90%;
     height: auto;
-    line-height: 2rem;
+    line-height: 1.5rem;
   }
   .home__content .body .bio h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .home__content .body .bio ul {
+    padding: 0;
+    list-style: none;
   }
   .home__content .body .bio li {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    text-align: center;
   }
 }
 @media screen and (max-width: 1440px) and (min-width: 1024px) {
@@ -100,7 +121,7 @@
   .home__content .body .bio {
     width: 35vw;
     height: 50vh;
-    line-height: 2.5rem;
+    line-height: 2.4rem;
   }
   .home__content .body .bio h1 {
     font-size: 2rem;
@@ -110,9 +131,15 @@
   }
 }
 .home__content .body .skills {
+  padding: 2%;
   color: #7f181b;
   font-family: "Inter", sans-serif;
   font-weight: 200;
+  background-image: linear-gradient(#7f181b, #7f181b), linear-gradient(#7f181b, #7f181b), linear-gradient(#7f181b, #7f181b), linear-gradient(#7f181b, #7f181b);
+  background-repeat: no-repeat;
+  background-size: 5px 50%, 50% 5px, 5px 50%, 50% 5px;
+  background-position: right top, right top;
+  margin: 20px;
 }
 @media screen and (max-width: 1024px) and (min-width: 768px) {
   .home__content .body .skills {
@@ -135,8 +162,14 @@
   }
   .home__content .body .skills h1 {
     font-size: 1.5rem;
+    text-align: center;
+  }
+  .home__content .body .skills ul {
+    padding: 0;
+    list-style: none;
   }
   .home__content .body .skills li {
+    text-align: center;
     font-size: 1.3rem;
   }
 }
@@ -145,13 +178,19 @@
     border-radius: 0px;
     width: 90%;
     height: auto;
-    line-height: 2rem;
+    line-height: 1.5rem;
   }
   .home__content .body .skills h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .home__content .body .skills ul {
+    padding: 0;
+    list-style: none;
   }
   .home__content .body .skills li {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    text-align: center;
   }
 }
 @media screen and (max-width: 1440px) and (min-width: 1024px) {
@@ -171,7 +210,7 @@
   .home__content .body .skills {
     width: 35vw;
     height: 50vh;
-    line-height: 2.5rem;
+    line-height: 2.4rem;
   }
   .home__content .body .skills h1 {
     font-size: 2rem;
@@ -267,7 +306,7 @@
     width: 10vw;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 425px) {
   .home__content {
     width: 100%;
   }
@@ -278,9 +317,40 @@
     display: none;
   }
   .home .body {
-    border: 0px transparent solid;
+    background-image: none;
     display: flex;
     flex-direction: column;
+  }
+  .home .body .bio {
+    background-image: none;
+  }
+  .home .body .skills {
+    background-image: none;
+  }
+  .home__style {
+    display: none;
+  }
+}
+@media screen and (max-width: 425px) {
+  .home__content {
+    width: 100%;
+  }
+  .home__content__title #title {
+    font-size: 1.5rem;
+  }
+  .home__content__title__line {
+    display: none;
+  }
+  .home .body {
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+  }
+  .home .body .bio {
+    background-image: none;
+  }
+  .home .body .skills {
+    background-image: none;
   }
   .home__style {
     display: none;

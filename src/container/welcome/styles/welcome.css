@@ -253,19 +253,21 @@
     margin-top: 20%;
   }
   .welcome__content__title #title {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .welcome__content__title__line {
     display: none;
   }
   .welcome__content__body__left {
-    width: 60%;
+    width: 100%;
   }
   .welcome__content__body__left__about h1 {
+    text-align: center;
     margin: 5%;
     font-size: 1.5rem;
   }
   .welcome__content__body__left__about h2 {
+    text-align: center;
     margin: 5%;
     line-height: 1.5rem;
     font-size: 1.1rem;
@@ -275,6 +277,7 @@
     height: auto;
   }
   .welcome__content__body__right {
+    display: none;
     width: 40%;
   }
   .welcome__content__body__right #red_dude {
