@@ -50,8 +50,8 @@ export const Welcome = () => {
           <div className="welcome__style__bottom__rect_2">
             <div className="welcome__style__bottom__rect_2_rect"></div>
           </div>
-        </div>{" "}
-      </div>{" "}
+        </div>
+      </div>
     </div>
   );
 };

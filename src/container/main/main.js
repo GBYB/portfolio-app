@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "../footer/footer";
 import Head from "../header/head";
 import Home from "../home/home";
+import { Project } from "../project/project";
 import { Welcome } from "../welcome/welcome";
 import "./style/main.css";
 const Main = () => {
@@ -14,6 +15,7 @@ const Main = () => {
         <Head />
         <Welcome />
         <Home />
+        <Project />
         <h1>main</h1> <h1>main</h1> <h1>main</h1>
         <h1>main</h1>
         <h1>main</h1>

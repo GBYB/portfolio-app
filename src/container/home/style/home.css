@@ -56,7 +56,7 @@
   .home__content .body .bio {
     width: 35vw;
     height: 50vh;
-    line-height: 2rem;
+    line-height: 1.8rem;
   }
   .home__content .body .bio h1 {
     font-size: 1.8rem;
@@ -69,7 +69,7 @@
   .home__content .body .bio {
     width: 90%;
     height: auto;
-    line-height: 2rem;
+    line-height: 1.8rem;
   }
   .home__content .body .bio h1 {
     font-size: 1.5rem;
@@ -108,7 +108,7 @@
   .home__content .body .bio {
     width: 35vw;
     height: 50vh;
-    line-height: 2.5rem;
+    line-height: 2rem;
   }
   .home__content .body .bio h1 {
     font-size: 2rem;
@@ -145,7 +145,7 @@
   .home__content .body .skills {
     width: 35vw;
     height: 50vh;
-    line-height: 2rem;
+    line-height: 1.8rem;
   }
   .home__content .body .skills h1 {
     font-size: 1.8rem;
@@ -158,7 +158,7 @@
   .home__content .body .skills {
     width: 90%;
     height: auto;
-    line-height: 2rem;
+    line-height: 1.8rem;
   }
   .home__content .body .skills h1 {
     font-size: 1.5rem;
@@ -197,7 +197,7 @@
   .home__content .body .skills {
     width: 35vw;
     height: 50vh;
-    line-height: 2.5rem;
+    line-height: 2rem;
   }
   .home__content .body .skills h1 {
     font-size: 2rem;
