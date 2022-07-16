@@ -31,7 +31,6 @@
 }
 .project__content__body {
   margin-top: 5%;
-  margin-left: 5%;
   margin-right: 5%;
 }
 .project__content__body__list__item {
@@ -39,6 +38,7 @@
   flex-direction: column;
 }
 .project__content__body__list__item__head {
+  margin-left: 10%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -49,7 +49,7 @@
   justify-content: center;
   background-color: #d1c6c6;
   text-align: center;
-  width: 20%;
+  width: 80%;
   height: 50%;
 }
 .project__content__body__list__item__head__title h2 {
@@ -63,18 +63,28 @@
   height: 100%;
 }
 .project__content__body__list__item__description {
+  margin-left: 10%;
+  margin-bottom: 2%;
   font-family: "Inter", sans-serif;
   font-weight: 200;
   color: #7f181b;
   font-size: 1.8rem;
 }
-.project__content #yellow_dude {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  height: 40%;
-  width: auto;
-  transform: rotateY(180deg);
+.project__content__body__list__item #link {
+  margin-left: 10%;
+  background-color: #7f181b;
+  color: #d1c6c6;
+  border: 0px;
+  width: 50%;
+  padding: 1%;
+}
+.project__content__body__list__item #link:hover {
+  cursor: pointer;
+  background-color: #d1c6c6;
+  color: #7f181b;
+}
+.project__content #border_glitch {
+  display: none;
 }
 .project__style {
   width: 10%;
@@ -143,4 +153,139 @@
   background-color: #7f181b;
   height: 24vh;
   width: 2rem;
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1024px) {
+  .project__content__title #title {
+    font-size: 2.5rem;
+  }
+  .project__content__title__line {
+    width: 10vw;
+  }
+  .project__content__body__list h2 {
+    font-size: 1.7rem;
+  }
+  .project__content__body__list p {
+    font-size: 1.2rem;
+  }
+  .project__content__body__list__item__head__title {
+    width: 80%;
+  }
+  .project__content__body__list__item__head img {
+    width: 10%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .project__content__title {
+    margin-top: 15%;
+  }
+  .project__content__title #title {
+    font-size: 2.5rem;
+  }
+  .project__content__title__line {
+    width: 10vw;
+  }
+  .project__content__body h2 {
+    font-size: 1.5rem;
+  }
+  .project__content__body p {
+    font-size: 1.1rem;
+  }
+  .project__content__body__list__item__head__title {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 425px) {
+  .project__content {
+    width: 100%;
+  }
+  .project__content__title {
+    margin-top: 15%;
+  }
+  .project__content__title #title {
+    font-size: 2rem;
+  }
+  .project__content__title__line {
+    display: none;
+  }
+  .project__content__body h2 {
+    font-size: 1.5rem;
+  }
+  .project__content__body p {
+    line-height: 2rem;
+    font-size: 1.1rem;
+  }
+  .project__content__body__list__item__head__title {
+    width: 70%;
+  }
+  .project__content__body__list__item__head img {
+    width: 15%;
+    height: 100%;
+  }
+  .project__style {
+    display: none;
+  }
+}
+@media screen and (max-width: 425px) {
+  .project__content {
+    position: relative;
+    width: 100%;
+  }
+  .project__content__title #title {
+    font-size: 1.5rem;
+  }
+  .project__content__title__line {
+    display: none;
+  }
+  .project__content__body {
+    width: 100%;
+  }
+  .project__content__body h2 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .project__content__body p {
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+  }
+  .project__content__body__list__item__head {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .project__content__body__list__item__head__title {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .project__content__body__list__item__head img {
+    display: none;
+  }
+  .project__content__body__list__item #link {
+    text-align: center;
+    border: 0px;
+    margin: 0;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 50%;
+    font-size: 1.1rem;
+    padding: 2%;
+  }
+  .project__content__body__list__item__description {
+    margin: 0%;
+  }
+  .project__content #border_glitch {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .project__style {
+    display: none;
+  }
 }/*# sourceMappingURL=project.css.map */

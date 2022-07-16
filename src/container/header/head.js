@@ -5,6 +5,7 @@ import "./styles/head.css";
 import bar from "./../../assets/bar.svg";
 const Head = () => {
   // const [isBar, setisBar] = useState(<FontAwesomeIcon icon={faBars} />);
+
   const [isBar, setisBar] = useState(<img src={bar} alt="bar" />);
 
   const [isClicked, setisClicked] = useState(true);
@@ -61,7 +62,8 @@ const Head = () => {
             <path d="M3 13.5238H37" strokeWidth={5} strokeLinecap="round" />
             <path d="M3 24.5873H37" strokeWidth={5} strokeLinecap="round" />
           </svg>
-        </div>
+        </div>{" "}
+        <h1 id="title_mobile">title</h1>
         <div className="mobile__head">
           {" "}
           <div id="home">

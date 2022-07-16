@@ -72,6 +72,12 @@
   width: 80%;
   height: auto;
 }
+.welcome__content__mobile {
+  display: none;
+}
+.welcome__content #border-glitch {
+  display: none;
+}
 .welcome__style {
   width: 10%;
   height: inherit;
@@ -247,7 +253,9 @@
 }
 @media screen and (max-width: 425px) {
   .welcome__content {
+    position: relative;
     width: 100%;
+    justify-content: flex-start;
   }
   .welcome__content__title {
     margin-top: 20%;
@@ -258,33 +266,52 @@
   .welcome__content__title__line {
     display: none;
   }
-  .welcome__content__body__left {
+  .welcome__content__body {
+    display: none;
+  }
+  .welcome__content__mobile {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .welcome__content__mobile__top {
     width: 100%;
   }
-  .welcome__content__body__left__about h1 {
+  .welcome__content__mobile__top h1 {
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    text-transform: uppercase;
+    color: #7f181b;
     text-align: center;
     margin: 5%;
     font-size: 1.5rem;
   }
-  .welcome__content__body__left__about h2 {
+  .welcome__content__mobile #red_dude {
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .welcome__content__mobile__bottom {
+    width: 100%;
+  }
+  .welcome__content__mobile__bottom h2 {
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
     text-align: center;
     margin: 5%;
     line-height: 1.5rem;
     font-size: 1.1rem;
   }
-  .welcome__content__body__left #yellow_dude {
-    width: 100%;
-    height: auto;
-  }
-  .welcome__content__body__right {
-    display: none;
-    width: 40%;
-  }
-  .welcome__content__body__right #red_dude {
-    width: 80%;
-    height: auto;
-  }
   .welcome__style {
     display: none;
+  }
+  .welcome #border-glitch {
+    height: auto;
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: 0;
   }
 }/*# sourceMappingURL=welcome.css.map */

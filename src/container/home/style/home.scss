@@ -192,6 +192,9 @@
         text-align: center;
       }
     }
+    #border-glitch {
+      display: none;
+    }
   }
   &__style {
     width: 10%;
@@ -314,8 +317,10 @@
 @media screen and (max-width: "425px") {
   .home {
     &__content {
+      position: relative;
       width: 100%;
-
+      display: flex;
+      flex-direction: column;
       &__title {
         #title {
           font-size: 1.5rem;
@@ -339,6 +344,14 @@
     }
     &__style {
       display: none;
+    }
+    #border-glitch {
+      position: absolute;
+      bottom: 0;
+      display: block;
+      height: auto;
+      width: 100%;
+      transform: rotateX(180deg);
     }
   }
 }

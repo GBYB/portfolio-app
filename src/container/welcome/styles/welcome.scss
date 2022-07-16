@@ -146,6 +146,12 @@
         }
       }
     }
+    &__mobile {
+      display: none;
+    }
+    #border-glitch {
+      display: none;
+    }
   }
   &__style {
     width: 10%;
@@ -358,8 +364,9 @@
 @media screen and (max-width: "425px") {
   .welcome {
     &__content {
+      position: relative;
       width: 100%;
-
+      justify-content: flex-start;
       &__title {
         margin-top: 20%;
 
@@ -371,36 +378,43 @@
         }
       }
       &__body {
-        &__left {
+        display: none;
+      }
+      &__mobile {
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        &__top {
           width: 100%;
-          &__about {
-            h1 {
-              text-align: center;
-
-              margin: 5%;
-              font-size: 1.5rem;
-            }
-            h2 {
-              text-align: center;
-
-              margin: 5%;
-              line-height: 1.5rem;
-
-              font-size: 1.1rem;
-            }
-          }
-
-          #yellow_dude {
-            width: 100%;
-            height: auto;
+          h1 {
+            font-weight: 400;
+            font-family: "Inter", sans-serif;
+            text-transform: uppercase;
+            color: #7f181b;
+            text-align: center;
+            margin: 5%;
+            font-size: 1.5rem;
           }
         }
-        &__right {
-          display: none;
-          width: 40%;
-          #red_dude {
-            width: 80%;
-            height: auto;
+        #red_dude {
+          width: 50%;
+          height: auto;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        &__bottom {
+          width: 100%;
+          h2 {
+            font-weight: 400;
+            font-family: "Inter", sans-serif;
+
+            text-align: center;
+
+            margin: 5%;
+            line-height: 1.5rem;
+
+            font-size: 1.1rem;
           }
         }
       }
@@ -408,6 +422,13 @@
 
     &__style {
       display: none;
+    }
+    #border-glitch {
+      height: auto;
+      width: 100%;
+      display: block;
+      position: absolute;
+      bottom: 0;
     }
   }
 }

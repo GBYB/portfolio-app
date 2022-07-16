@@ -1,8 +1,8 @@
 import React from "react";
 import "./style/project.css";
 import acaya from "../../assets/acaya.png";
-import yellow_dude from "../../assets/yellow_dude.png";
-export const Project = () => {
+import border_glitch from "../../assets/glitch-border1.png";
+const Project = () => {
   return (
     <div className="project">
       <div className="project__content">
@@ -21,16 +21,18 @@ export const Project = () => {
               <div className="project__content__body__list__item__head">
                 <div className="project__content__body__list__item__head__title">
                   <h2>Project name</h2>
-                </div>{" "}
+                </div>
                 <img src={acaya} alt="acaya" height="64" width="64" />
               </div>
               <div className="project__content__body__list__item__description">
                 <p>Project description</p>
               </div>
+              <button id="link">Project Name Link</button>
             </div>
           </div>
         </div>
-        <img id="yellow_dude" src={yellow_dude} alt="yellow_dude"></img>
+        {/* <img id="yellow_dude" src={yellow_dude} alt="yellow_dude"></img> */}
+        <img id="border_glitch" src={border_glitch} alt="glitch"></img>
       </div>
       <div className="project__style">
         <div className="project__style__top">
@@ -55,3 +57,4 @@ export const Project = () => {
     </div>
   );
 };
+export default Project;

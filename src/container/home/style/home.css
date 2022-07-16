@@ -226,6 +226,9 @@
   background-color: #d1c6c6;
   text-align: center;
 }
+.home__content #border-glitch {
+  display: none;
+}
 .home__style {
   width: 10%;
   height: inherit;
@@ -333,7 +336,10 @@
 }
 @media screen and (max-width: 425px) {
   .home__content {
+    position: relative;
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
   .home__content__title #title {
     font-size: 1.5rem;
@@ -354,5 +360,13 @@
   }
   .home__style {
     display: none;
+  }
+  .home #border-glitch {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    height: auto;
+    width: 100%;
+    transform: rotateX(180deg);
   }
 }/*# sourceMappingURL=home.css.map */

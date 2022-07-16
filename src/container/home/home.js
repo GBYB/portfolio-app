@@ -2,6 +2,7 @@ import React from "react";
 import Head from "../header/head";
 import { Welcome } from "../welcome/welcome";
 import "./style/home.css";
+import border_glitch from "./../../assets/glitch-border1.png";
 
 const Home = () => {
   let skillsArr = [
@@ -46,6 +47,7 @@ const Home = () => {
             <ul>{items_skills}</ul>
           </div>
         </div>
+        <img id="border-glitch" src={border_glitch} alt="glitch"></img>
       </div>
       <div className="home__style">
         <div className="home__style__top">
@@ -65,7 +67,7 @@ const Home = () => {
           <div className="home__style__bottom__rect_2">
             <div className="home__style__bottom__rect_2_rect"></div>
           </div>
-        </div>{" "}
+        </div>
       </div>
     </div>
   );
